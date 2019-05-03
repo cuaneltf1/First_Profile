@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Old Standard TT', serif;
+    box-sizing:border-box;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Cambo|Old+Standard+TT');
+</style>
+
+/*
+font-family:'Old Standard TT', serif;
+font-family:'Cambo', serif;
+*/
+
+.container{
+    display: block;
+    position: absolute;
+}
+
+h1, h2, p{
+    color: #fff;
+}
+#home{
+    background-image:url(../img/bg1.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center center;
+    padding:438px;
+    min-height:100vh;
+}
+
+#about{
+    background-image:url(../img/bg2.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center center;
+    padding:353px;
+    min-height:100vh;
+}
+
+#contact{
+    background-image:url(../img/bg3.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center center;
+    padding:298px;
+    min-height:100vh;
+}
+
+nav a{
+    display:block;
+    text-decoration:none;
+    color:#fff;
+    background:rgba(125, 125, 125, .75);
+    padding:3.32em;
+    margin:5px 0;
+    font-size:37px;
+}
+
+nav a:hover{
+    color:#FB9804;
+    background:rgba(125, 125, 125, .85);
+}
+
+#logo{
+    background:rgba(125, 125, 125, .75);
+    padding-top:5px;
+    font-size:24px;
+}
+
+ul{
+    list-style-type:none;
+}
+
+.col20{
+    position:fixed;
+    right:0px
+    top:10px;
+    text-align:center;
+    width:20%;
+}
+
+.col80{
+    position:relative;
+    text-align:left;
+    top:20px;
+    right:85px;
+    background:rgba(0,0,0,.75);
+    padding:50px;
+    width:80%;
+    
+}
+
+.credit{
+    position:fixed;
+    left:650px;
+    bottom:10px;
+    font-size:14px;
+    font-style:italic;
+    color:rgba(255, 255, 255, .45);
+    background-color:rgba(0,0,0,.75);
+    padding:7px;
+    display:inline-block;
+}
+
+.credit a{
+    color:rgba(125, 125, 125, .75);
+}
+
+
+@media screen and (max-width:1440px){
+    #home{
+        padding: 30px 100px 250px 100px;
+    }
+    #about{
+        padding: 30px 100px 55px;
+    }
+    #contact{
+        padding: 30px 100px 55px;
+    }
+    .col20,.col80{
+        width:100%;
+        position:relative;
+    }
+    
+    .col80{
+        position:relative;
+        text-align:center;
+        right:0px;
+    }
+}
+@media screen and (max-width:1024px){
+    #contact{
+    padding:25px 75px;
+    min-height:100vh;
+    }
+    #about{
+    padding:30px 100px 55px;
+    min-height:100vh;
+    }
+nav a{
+    padding:.13em;
+    margin:5px 0;
+    font-size:1em;
+    }
+#logo{
+    padding-top:0px;
+    font-size:1.5em;
+}
+}
